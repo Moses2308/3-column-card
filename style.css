@@ -5,6 +5,7 @@
 
   --color-transp-white: hsla(0, 0%, 100%, 0.75);
   --color-light-grey: hsl(0, 0%, 95%);
+  --color-transparent: hsla(0, 0, 0, 0);
 }
 
 body {
@@ -28,19 +29,12 @@ body {
   display: grid;
   justify-items: left;
 
-  gap: 2rem;
+  gap: 1.5rem;
 }
 .card__category > .category__heading {
   font-family: "Big Shoulders Display", sans-serif;
   font-size: 2.5rem;
   color: var(--color-light-grey);
-}
-.button {
-  background-color: var(--color-light-grey);
-  display: inline;
-  color: black;
-  padding: 1em 2em;
-  border-radius: 3em;
 }
 header,
 footer {
@@ -64,6 +58,14 @@ footer {
 .luxury::before {
   content: url(images/icon-luxury.svg);
 }
+.button {
+  background-color: var(--color-light-grey);
+  display: inline;
+  color: black;
+  padding: 1em 2em;
+  border-radius: 3em;
+  border: 1px solid var(--color-light-grey);
+}
 .sedan > .button {
   color: var(--color-orange);
 }
@@ -72,4 +74,21 @@ footer {
 }
 .luxury > .button {
   color: var(--color-dark-cyan);
+}
+.button:hover {
+  background-color: var(--color-transparent);
+  border: 1px solid var(--color-light-grey);
+  color: var(--color-light-grey);
+  transition: background-color 0.2s ease-in-out;
+}
+
+@media (min-width: 550px) {
+  .categories-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 970px;
+  }
+  .button {
+    margin-top: 3rem;
+  }
 }
