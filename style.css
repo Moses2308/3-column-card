@@ -16,12 +16,60 @@ body {
   display: grid;
   place-items: center;
 }
+
+.categories-card {
+  margin: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card__category {
+  padding: 3.5rem;
+  display: grid;
+  justify-items: left;
+
+  gap: 2rem;
+}
+.card__category > .category__heading {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 2.5rem;
+  color: var(--color-light-grey);
+}
+.button {
+  background-color: var(--color-light-grey);
+  display: inline;
+  color: black;
+  padding: 1em 2em;
+  border-radius: 3em;
+}
+header,
+footer {
+  display: none;
+}
 .sedan {
   background-color: var(--color-orange);
+}
+.sedan::before {
+  content: url(images/icon-sedans.svg);
 }
 .suv {
   background-color: var(--color-cyan);
 }
+.suv::before {
+  content: url(images/icon-suvs.svg);
+}
 .luxury {
   background-color: var(--color-dark-cyan);
+}
+.luxury::before {
+  content: url(images/icon-luxury.svg);
+}
+.sedan > .button {
+  color: var(--color-orange);
+}
+.suv > .button {
+  color: var(--color-cyan);
+}
+.luxury > .button {
+  color: var(--color-dark-cyan);
 }
