@@ -12,7 +12,6 @@ This is a solution to the [3-column preview card component challenge on Frontend
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -30,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/Moses2308/3-column-card)
+- Live Site URL: [Netlify](https://superlative-sorbet-810e27.netlify.app/)
 
 ## My process
 
@@ -63,13 +62,6 @@ applying specific styles allowed me to write less code and greatly simplify the 
 ### Continued development
 
 I would like to continue this process of simplification wherever possible. I'd like to become proficient at visually breaking down layouts into reusable components.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
